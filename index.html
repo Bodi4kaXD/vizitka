@@ -1,33 +1,43 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Моё портфолио</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Главная</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
 </head>
-<body>
+<body data-theme="light">
+  <div class="container">
     <header>
-        <h1>Привет, я Веб-разработчик!</h1>
+      <h1>Заяц Артем</h1>
+      <p class="subtitle">Front и Back end разработчик</p>
     </header>
-    <section class="about">
-        <img src="avatar.png" alt="Моё фото">
-        <h2>О себе</h2>
-        <p>Меня зовут Артем, я из Павлодара. Учусь в ПГУ на программиста.</p>
-        <p>Увлекаюсь веб-разработкой, дизайном интерфейсов и разработкой игр.</p>
-    </section>
-    <section class="skills">
-        <h2>Навыки</h2>
-        <ul>
-            <li>HTML, CSS</li>
-            <li>Языки С</li>
-        </ul>
-    </section>
-    <section class="contacts">
-        <p>GitHub: <a href="https://github.com/Bodi4kaXD" target="_blank">https://github.com/Bodi4kaXD</a></p>
-    </section>
-    <footer>
-        <p>&copy; Артем Заяц</p>
-    </footer>
+
+    <nav>
+      <ul>
+        <li><span class="dot">•</span></li>
+        <li><a href="projects.html">Проекты</a></li>
+        <li><a href="about.html">Обо мне</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+      </ul>
+    </nav>
+
+    <div class="theme-toggle" id="toggle-theme">
+        <span id="theme-text">Темная тема</span>
+      </div>
+
+    <aside class="bio">
+      <p>
+        Занимаюсь Front и Back end разработкой<br>
+        Есть опыт работы с Unity<br>
+      </p>
+    </aside>
+
+    <div class="background-effect"></div>
+  </div>
 </body>
+<footer>
+    <p>&copy; <span id="year"></span> Bodi4kaXD</p>
+  </footer>
 </html>
